@@ -57,5 +57,11 @@ SELECT * FROM animals;
     UPDATE animals SET owner_id =( SELECT id FROM owners WHERE full_name ='Melody Pond') WHERE name = 'Blossom' OR name = 'Squirtle' OR name = 'Charmander';
     -- Dean Winchester owns Angemon and Boarmon.
          UPDATE animals SET owner_id =( SELECT id FROM owners WHERE full_name ='Dean Winchester') WHERE name = ' Angemon' AND name = 'Boarmon';
-
 -- UPDATE animals SET owner_id = 5 WHERE name = ' Angemon';
+
+-- Insert the following data for vet
+INSERT INTO vets (name, age, date_of_graduation)
+VALUES('William Tatcher', 45, '2000-04-23'),
+      ('Maisy Smith', 26, '2019-01-17'),
+      ('Stephanie Mendez', 64, '1981-05-04'),
+      ('Jack Harkness', 38, '2008-06-08');
